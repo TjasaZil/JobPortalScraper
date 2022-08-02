@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
     <title>Document</title>
 </head>
@@ -12,11 +13,15 @@
     <main>
     <label for="number">Please enter a number:</label>
     <input name="number" type="number" id="number">
-    <button id="btn">Reach 1</button>
+    <button id="btn">Calculate</button>
     <div id="result"></div>
+    <div id="increments"></div>
+    <div id="table"></div>
     </main>
+    <canvas id="myChart"></canvas>
     
 </body>
 
-<script src="calculation.js"></script>
+<script src="script/calculation.js"></script>
+<script src="script/table.js"></script>
 </html>
