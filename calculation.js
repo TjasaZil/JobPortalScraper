@@ -22,7 +22,7 @@ function collatz(){
         steps++;
     }
     for(let i = 0; i < list.length; i++){
-        result.textContent = result.textContent + list[i]
+        result.textContent = result.textContent + " " + list[i]
     }
 }
 
