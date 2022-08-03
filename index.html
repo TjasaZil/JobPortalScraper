@@ -5,23 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="scss/main.css">
     
-    <title>Document</title>
+    <title>CollatzConjecture</title>
 </head>
-<body>
+<body data-theme="">
 
     <main>
+        <div id="top-container">
+            <label class="switch">
+                <input  id="switch-theme" type="checkbox">
+                <span  class="slider round"></span>
+              </label>
+        </div>
+        <div id="text-container"></div>
+
+        <div id="calculate container">
     <label for="number">Please enter a number:</label>
     <input name="number" type="number" id="number">
-    <button id="btn">Calculate</button>
-    <div id="result"></div>
-    <div id="increments"></div>
+    <button id="btn">Calculate</button></div>
+
+    <!--<div id="result"></div>
+    <div id="increments"></div>-->
+    <div id="results-container">
     <div id="table"></div>
     </main>
     <canvas id="myChart"></canvas>
+</div>
     
 </body>
 
 <script src="script/calculation.js"></script>
 <script src="script/table.js"></script>
+<script src="script/theme.js"></script>
 </html>
