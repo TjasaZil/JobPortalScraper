@@ -130,11 +130,19 @@ canvas {
   align-items: center;
   margin: auto;
 }
+@media (min-width: 800px) {
+  #calculate-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
 #calculate-container label {
   padding: 1rem;
   font-size: 1.1rem;
 }
-#calculate-container #number {
+#calculate-container #number-input {
   padding: 0.8rem;
   width: 300px;
   font-size: 1.2rem;
@@ -158,4 +166,39 @@ canvas {
   box-shadow: 10px 10px 27px -7px rgba(95, 107, 133, 0.91);
   -webkit-box-shadow: 10px 10px 27px -7px rgba(95, 107, 133, 0.91);
   -moz-box-shadow: 10px 10px 27px -7px rgba(95, 107, 133, 0.91);
+}
+@media (min-width: 800px) {
+  #calculate-container #btn {
+    margin: auto;
+  }
+}
+
+#error-container {
+  color: #ef233c;
+}
+@media (min-width: 800px) {
+  #error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+#results-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+#table {
+  /*background-color: white;*/
+  padding: 3rem;
+}
+
+#myChart {
+  padding: 3rem;
 }/*# sourceMappingURL=main.css.map */

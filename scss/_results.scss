@@ -1,0 +1,15 @@
+
+#results-container{
+    @include flex(row, center, center);
+    margin: auto;
+    margin-top: 5rem;
+}
+
+#table{
+/*background-color: white;*/
+padding: 3rem;
+}
+#myChart{
+    padding: 3rem;
+    
+}

@@ -1,6 +1,7 @@
 let table = document.getElementById("table");
 let beginnTable = "<table><tr>";
 let firstRow="<td>Steps</td><td>number</td>";
+let number = parseInt(document.getElementById("number"));
 let html =beginnTable + firstRow; //add beginning of table
 
 let perrow = 1;

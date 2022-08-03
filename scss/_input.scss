@@ -2,12 +2,15 @@
 #calculate-container{
     @include flex(column,center,center);
     margin: auto;
+    @include desktop(){
+        @include flex(row,center,center);
+    }
 
     label{
         padding: 1rem;
         font-size: 1.1rem;
     }
-    #number{
+    #number-input{
         padding:0.8rem;
         width:300px;
         font-size: 1.2rem;
@@ -31,5 +34,15 @@
             -webkit-box-shadow: 10px 10px 27px -7px rgba(95,107,133,0.91);
             -moz-box-shadow: 10px 10px 27px -7px rgba(95,107,133,0.91);
         }
+        @include desktop{
+            margin: auto;
+        }
+    }
+}
+#error-container{
+    color: $red;
+    @include desktop(){
+        @include flex(column,center,flex-start);
+        
     }
 }

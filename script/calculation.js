@@ -4,6 +4,12 @@ let steps = 0;
 let increments=document.getElementById("increments");
 let result = document.getElementById("result");
 let list = [];
+let errorText = document.getElementById("error");
+let numberInput = document.getElementById("number-input");
+
+
+errorText.style.display="none";
+
 
 btn.addEventListener("click", function(){
 collatz();
@@ -12,10 +18,11 @@ makeTable();
 
 
 function collatz(){
-    let number = parseFloat(document.getElementById("number").value);
+    let number = parseFloat(document.getElementById("number-input").value);
     if (number < 1) {
-        alert("Only positive numbers are allowed");
-        return;
+        errorText.style.display="flex";
+        html.style.display="none";  
+         
       }
     while(number != 1){
         if(number%2==0){
@@ -29,14 +36,7 @@ function collatz(){
         
         steps++;
     }
-   /* for(let i = 0; i < list.length; i++){
-        result.textContent = result.textContent + list[i] + " "
-        
-    }
-    if(number===1){
-        increments.textContent=`It took ${steps} steps to come to 1`
-    }*/
-}
+  }
 
 
 
