@@ -1,12 +1,23 @@
 [data-theme=dark],
 [data-theme=dark] a {
-  background: darkcyan;
-  color: bisque;
+  background: #0b0b64;
+  color: #fefefa;
+}
+[data-theme=dark] #btn,
+[data-theme=dark] a #btn {
+  color: #32127a;
+  background-color: #fefdfa;
 }
 
-[data-theme=light] #theme {
-  background: white;
-  color: darkblue;
+[data-theme=light],
+[data-theme=light] a {
+  background: #fefdfa;
+  color: #32127a;
+}
+[data-theme=light] #btn,
+[data-theme=light] a #btn {
+  color: #fefefa;
+  background-color: #0b0b64;
 }
 
 /* The switch - the box around the slider */
@@ -30,7 +41,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #6fffe9;
   transition: 0.4s;
 }
 .slider:before {
@@ -40,16 +51,16 @@
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: #f90093;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #ffff3f;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #fefdfa;
 }
 
 input:checked + .slider:before {
@@ -68,4 +79,83 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-/*help: https://www.w3schools.com/howto/howto_css_switch.asp*//*# sourceMappingURL=main.css.map */
+/*help: https://www.w3schools.com/howto/howto_css_switch.asp*/
+* {
+  box-sizing: border-box;
+}
+
+*:focus { /* no focus border on input and other elements*/
+  outline: none;
+}
+
+body {
+  font-family: "Special Elite", cursive;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  background-color: black;
+}
+
+#text-container {
+  text-align: left;
+  width: 70vw;
+  max-width: 800px;
+}
+#text-container h1 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+@media (min-width: 800px) {
+  #text-container h1 {
+    font-size: 2.5rem;
+  }
+}
+#text-container p {
+  font-size: 1rem;
+}
+
+#calculate-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+#calculate-container label {
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+#calculate-container #number {
+  padding: 0.8rem;
+  width: 300px;
+  font-size: 1.2rem;
+  font-family: "Special Elite", cursive;
+  border-radius: 30px;
+  border: 1px solid #0b0b64;
+}
+#calculate-container #btn {
+  padding: 1rem;
+  width: 200px;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 30px;
+  font-family: "Special Elite", cursive;
+  font-size: 1rem;
+}
+#calculate-container #btn:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: 0.5s;
+  box-shadow: 10px 10px 27px -7px rgba(95, 107, 133, 0.91);
+  -webkit-box-shadow: 10px 10px 27px -7px rgba(95, 107, 133, 0.91);
+  -moz-box-shadow: 10px 10px 27px -7px rgba(95, 107, 133, 0.91);
+}/*# sourceMappingURL=main.css.map */

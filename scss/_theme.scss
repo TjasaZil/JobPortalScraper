@@ -1,10 +1,20 @@
 [data-theme='dark'],
 [data-theme='dark'] a {
-  background: darkcyan;
-  color: bisque;
+  background: $bg-dark;
+  color: $text-dark;
+  #btn{
+    color: $text-light;
+    background-color: $bg-light;
+  }
 }
 
-[data-theme='light'] #theme {
-  background: white;
-  color: darkblue;
+[data-theme='light'],
+[data-theme='light'] a {
+  background: $bg-light;
+  color: $text-light;
+  #btn{
+    color: $text-dark;
+    background-color: $bg-dark;
+  }
 }
+

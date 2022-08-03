@@ -1,0 +1,20 @@
+
+*{
+    box-sizing: border-box;
+}
+*:focus { /* no focus border on input and other elements*/
+    outline: none;
+  }
+
+  body{
+    font-family: $font-family;
+    height: 100vh;
+    width: 100vw;
+  }
+  main{
+    @include flex(column,center,center);
+  }
+
+  canvas{
+    background-color: black;
+  }

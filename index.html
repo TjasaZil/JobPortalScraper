@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="scss/main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+        </style>
     
     <title>CollatzConjecture</title>
 </head>
@@ -18,9 +21,24 @@
                 <span  class="slider round"></span>
               </label>
         </div>
-        <div id="text-container"></div>
+        <div id="text-container">
+            <h1>About Collatz Conjnecture</h1>
+            <section>
+                <p>The Collatz conjecture is one of the most famous unsolved problems in mathematics. The conjecture asks whether repeating two simple arithmetic operations will eventually transform every positive integer into 1. It concerns sequences of integers in which each term is obtained from the previous term as follows:</p>
+                <ul>
+                    <li>if the previous term is even, the next term is one half of the previous term</li>
+                    <li>If the previous term is odd, the next term is 3 times the previous term plus 1</li>
+                </ul>
+                
+                <p>The conjecture is that these sequences always reach 1, no matter which positive integer is chosen to start the sequence.</p>
 
-        <div id="calculate container">
+                <p>It is named after mathematician Lothar Collatz, who introduced the idea in 1937, two years after receiving his doctorate. It is also known as the <span style="color:red; font-weight: bold;">3n + 1 problem</span>, the <span style="color:green; font-weight: bold;"> 3n + 1 conjecture</span>, the <span style="color:yellowgreen; font-weight: bold;">Ulam conjecture </span> (after Stanisław Ulam), <span style="color:pink; font-weight: bold;">Kakutani's problem</span>  (after Shizuo Kakutani), <span style="color:orange; font-weight: bold;">the Thwaites conjecture</span>  (after Sir Bryan Thwaites), <span style="color:cyan; font-weight: bold;">Hasse's algorithm</span> (after Helmut Hasse), or the <span style="color:dodgerblue; font-weight: bold;">Syracuse problem</span>. The sequence of numbers involved is sometimes referred to as the hailstone sequence, hailstone numbers or hailstone numerals (because the values are usually subject to multiple descents and ascents like hailstones in a cloud), or as wondrous numbers.</p>
+
+                <p>Paul Erdős said about the Collatz conjecture: "Mathematics may not be ready for such problems." He also offered US$500 for its solution. Jeffrey Lagarias stated in 2010 that the Collatz conjecture "is an extraordinarily difficult problem, completely out of reach of present day mathematics".</p>
+                </section>
+        </div>
+
+        <div id="calculate-container">
     <label for="number">Please enter a number:</label>
     <input name="number" type="number" id="number">
     <button id="btn">Calculate</button></div>
