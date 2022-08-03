@@ -103,6 +103,7 @@ main {
 
 canvas {
   background-color: black;
+  width: 500px;
 }
 
 #text-container {
@@ -201,4 +202,8 @@ canvas {
 
 #myChart {
   padding: 3rem;
+}
+
+#width {
+  width: 500px;
 }/*# sourceMappingURL=main.css.map */

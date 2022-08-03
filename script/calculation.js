@@ -6,6 +6,9 @@ let result = document.getElementById("result");
 let list = [];
 let errorText = document.getElementById("error");
 let numberInput = document.getElementById("number-input");
+let stepList=[{}];
+let xLabel=[];
+let yLabel=[];
 
 
 errorText.style.display="none";
@@ -14,6 +17,8 @@ errorText.style.display="none";
 btn.addEventListener("click", function(){
 collatz();
 makeTable();
+makeChart();
+
 })
 
 
@@ -33,6 +38,14 @@ function collatz(){
            // console.log(number)
         }
         list[steps] = number;
+        stepList[steps] = {steps, number};
+        xLabel.push(steps);
+        yLabel.push(number);
+       
+        /*console.log(stepList[steps]);*/
+        console.log(yLabel);
+        console.log(xLabel);
+        
         
         steps++;
     }
