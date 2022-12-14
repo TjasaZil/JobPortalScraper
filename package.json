@@ -1,11 +1,15 @@
 {
   "dependencies": {
     "axios": "^1.2.1",
-    "cheerio": "^1.0.0-rc.12"
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "esbuild": "^0.16.6",
     "esbuild-runner": "^2.2.2",
     "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "scrape": "esr ./src/index.ts"
   }
 }
