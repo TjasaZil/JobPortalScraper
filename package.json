@@ -2,7 +2,8 @@
   "dependencies": {
     "axios": "^1.2.1",
     "cheerio": "^1.0.0-rc.12",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
   },
   "devDependencies": {
     "esbuild": "^0.16.6",
@@ -10,6 +11,6 @@
     "typescript": "^4.9.4"
   },
   "scripts": {
-    "scrape": "esr ./src/index.ts"
+    "scrape": "nodemon ./src/scraper.js"
   }
 }
