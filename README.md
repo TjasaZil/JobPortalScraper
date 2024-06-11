@@ -7,6 +7,8 @@
 - clone repo
 - run **npm install** to install node modules
 - run **npm run build** to compile typescript. JS files will be available in the dist file after that
+- run **npm install -g typescript**
+- go to src file and run **tsc index.ts**
 
 ## Technologies used:
 
